@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <h2>My First Form</h2>
+    <form>
+        <div>
+            <input type="radio" name="gender" value="Male" id="fldMale" checked>
+            <label for="fldMale">Άντρας</label><br>
+            <input type="radio" name="gender" value="female" id="fldFemale">
+            <label for="fldFemale">Γυναίκα</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="vehicle1" value="bike" id="fldBike" checked>
+            <label for="fldBike">Ποδήλατο</label><br>
+            <input type="checkbox" name="vehicle2" value="motorcycle" id="fldMotorcycle">
+            <label for="fldMotorcycle">Μοτοσυκλέτα</label><br>
+            <input type="checkbox" name="vehicle3" value="car" id="fldCar">
+            <label for="fldCar">Αυτοκίνητο</label>
+        </div>
+
+        <div>
+            <label for="fldNationality">Υπηκοότητα</label>
+            <select name="nationality" id="fldNationality">
+                <option value="" disabled selected>Επιλέξτε Υπηκοότητα</option>
+                <option value="greek">Ελλάδα</option>
+                <option value="spanish">Ισπανία</option>
+                <option value="english">Αγγλία</option>
+            </select>
+        </div>
+
+        <div>
+            <div>
+                <label for="fldFirstname">Όνομα</label>
+                <input type="text" name="firstname" id="fldFirstname" placeholder="Συμπληρώστε Όνομα" minlength="5" maxlength="15" required>
+            </div>
+            <div>
+                <label for="fldWorkExperience">Χρόνια προϋπηρεσίας</label>
+                <input type="number" name="work-experience" id="fldWork-experience" min="3" max="20">
+            </div>
+            <div>
+                <label for="fldEmail">Email</label>
+                <input type="email" name="email" id="fldEmail">
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
